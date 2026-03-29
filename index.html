@@ -5,114 +5,108 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aura Indumentaria</title>
 
-<!-- ICONOS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #f7f7f7;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+}
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        background-color: #111;
-        color: white;
-        padding: 15px;
-    }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #111;
+    color: white;
+    padding: 15px;
+}
 
-    header img {
-        height: 50px;
-    }
+header img {
+    height: 50px;
+}
 
-    .social {
-        text-align: center;
-        padding: 10px;
-        background: #222;
-    }
+.social {
+    text-align: center;
+    background: #222;
+    padding: 10px;
+}
 
-    .social a {
-        color: white;
-        margin: 0 10px;
-        font-size: 24px;
-        text-decoration: none;
-    }
+.social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
 
-    .card {
-        background: white;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        position: relative;
-    }
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
 
-    .card img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 
-    .info {
-        padding: 15px;
-    }
+.info {
+    padding: 15px;
+}
 
-    .price {
-        font-weight: bold;
-    }
+.price {
+    font-weight: bold;
+}
 
-    .tag {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        color: white;
-        font-size: 12px;
-    }
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
 
-    .available {
-        background-color: green;
-    }
+.available {
+    background: green;
+}
 
-    .out {
-        background-color: red;
-    }
+.out {
+    background: red;
+}
 
-    /* BOTON WHATSAPP */
-    .whatsapp {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #25D366;
-        color: white;
-        font-size: 30px;
-        padding: 15px;
-        border-radius: 50%;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="AURALOGO.JPG">
+    <img src="auralogo.jpg">
     <h1>Aura Indumentaria</h1>
 </header>
 
-<!-- REDES -->
 <div class="social">
     <a href="https://www.instagram.com/auraindumentariaog/" target="_blank">
         <i class="fab fa-instagram"></i>
@@ -124,84 +118,80 @@
 
 <div class="container">
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="OUFITCREMITA.JPG">
-        <div class="info">
-            <h3>Outfit Cremita</h3>
-            <div class="price">Pantalón $45.000</div>
-            <div class="price">Sweater $35.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="oufitcremita.jpg">
+<div class="info">
+<h3>Outfit Cremita</h3>
+<div class="price">Pantalón $45.000</div>
+<div class="price">Sweater $35.000</div>
+</div>
+</div>
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="CONJUNTOBLANCO.JPG">
-        <div class="info">
-            <h3>Conjunto Blanco</h3>
-            <div class="price">Pantalón $45.000</div>
-            <div class="price">Sweater $35.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="conjuntoblanco.jpg">
+<div class="info">
+<h3>Conjunto Blanco</h3>
+<div class="price">Pantalón $45.000</div>
+<div class="price">Sweater $35.000</div>
+</div>
+</div>
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="BODYCAMISA.JPG">
-        <div class="info">
-            <h3>Body Camisa</h3>
-            <div class="price">$30.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="bodycamisa.jpg">
+<div class="info">
+<h3>Body Camisa</h3>
+<div class="price">$30.000</div>
+</div>
+</div>
 
-    <!-- BUZOS -->
-    <div class="card"><span class="tag available">Disponible</span><img src="OUFITBUZOARGENTINA1.JPG"><div class="info"><h3>Buzo Argentina 1</h3><div class="price">$25.000</div></div></div>
-    <div class="card"><span class="tag available">Disponible</span><img src="OUFITBUZOARGENTINA2.JPG"><div class="info"><h3>Buzo Argentina 2</h3><div class="price">$25.000</div></div></div>
-    <div class="card"><span class="tag available">Disponible</span><img src="OUFITBUZOARGENTINA3.JPG"><div class="info"><h3>Buzo Argentina 3</h3><div class="price">$25.000</div></div></div>
-    <div class="card"><span class="tag available">Disponible</span><img src="OUFITBUZOARGENTINA4.JPG"><div class="info"><h3>Buzo Argentina 4</h3><div class="price">$25.000</div></div></div>
-    <div class="card"><span class="tag available">Disponible</span><img src="OUFITBUZOARGENTINA5.JPG"><div class="info"><h3>Buzo Argentina 5</h3><div class="price">$25.000</div></div></div>
+<div class="card"><span class="tag available">Disponible</span><img src="buzoargentina1.jpg"><div class="info"><h3>Buzo Argentina 1</h3><div class="price">$25.000</div></div></div>
+<div class="card"><span class="tag available">Disponible</span><img src="buzoargentina2.jpg"><div class="info"><h3>Buzo Argentina 2</h3><div class="price">$25.000</div></div></div>
+<div class="card"><span class="tag available">Disponible</span><img src="buzoargentina3.jpg"><div class="info"><h3>Buzo Argentina 3</h3><div class="price">$25.000</div></div></div>
+<div class="card"><span class="tag available">Disponible</span><img src="buzoargentina4.jpg"><div class="info"><h3>Buzo Argentina 4</h3><div class="price">$25.000</div></div></div>
+<div class="card"><span class="tag available">Disponible</span><img src="buzoargentina5.jpg"><div class="info"><h3>Buzo Argentina 5</h3><div class="price">$25.000</div></div></div>
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="CHAQUETA.JPG">
-        <div class="info">
-            <h3>Chaqueta</h3>
-            <div class="price">$60.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="chaqueta.jpg">
+<div class="info">
+<h3>Chaqueta</h3>
+<div class="price">$60.000</div>
+</div>
+</div>
 
-    <div class="card">
-        <span class="tag out">Sin Stock</span>
-        <img src="PANTALONJEAN.JPG">
-        <div class="info">
-            <h3>Pantalón Jean</h3>
-            <div class="price">$45.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag out">Sin Stock</span>
+<img src="pantalonjean.jpg">
+<div class="info">
+<h3>Pantalón Jean</h3>
+<div class="price">$45.000</div>
+</div>
+</div>
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="PALAZOS.JPG">
-        <div class="info">
-            <h3>Palazos</h3>
-            <div class="price">$20.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="palazos.jpg">
+<div class="info">
+<h3>Palazos</h3>
+<div class="price">$20.000</div>
+</div>
+</div>
 
-    <div class="card">
-        <span class="tag available">Disponible</span>
-        <img src="CONJUNTOANIMALPRINT.JPG">
-        <div class="info">
-            <h3>Conjunto Animal Print</h3>
-            <div class="price">$40.000</div>
-        </div>
-    </div>
+<div class="card">
+<span class="tag available">Disponible</span>
+<img src="conjuntoanimalprint.jpg">
+<div class="info">
+<h3>Conjunto Animal Print</h3>
+<div class="price">$40.000</div>
+</div>
+</div>
 
 </div>
 
-<!-- BOTON WHATSAPP -->
-<a class="whatsapp" 
-href="https://wa.me/5492622466018?text=Me%20gustaria%20conseguir%20mas%20informacion%20sobre%20precios%20y%20talles" 
-target="_blank">
+<a class="whatsapp" href="https://wa.me/5492622466018?text=Me%20gustaria%20conseguir%20mas%20informacion%20sobre%20precios%20y%20talles" target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
 
