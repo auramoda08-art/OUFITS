@@ -11,91 +11,107 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f7f7f7;
+    background: #f4f4f4;
 }
 
+/* HEADER */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    background-color: #111;
-    color: white;
-    padding: 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    background:#000;
+    color:white;
+    padding:15px;
 }
 
-header img {
-    height: 50px;
-}
+header img { height:50px; }
 
+/* REDES */
 .social {
-    text-align: center;
-    background: #222;
-    padding: 10px;
+    text-align:center;
+    background:#111;
+    padding:10px;
 }
 
 .social a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
+    color:white;
+    margin:0 15px;
+    font-size:24px;
 }
 
+/* GRID PRODUCTOS */
 .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
 }
 
+/* CARD */
 .card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    position: relative;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
 }
 
 .card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    width:100%;
+    height:280px;
+    object-fit:cover;
 }
 
 .info {
-    padding: 15px;
+    padding:15px;
+    text-align:center;
 }
 
 .price {
-    font-weight: bold;
+    font-weight:bold;
+    margin:5px 0;
 }
 
+/* BOTON COMPRA */
+.buy {
+    display:block;
+    margin-top:10px;
+    padding:10px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* ETIQUETAS */
 .tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
-    font-size: 12px;
+    position:absolute;
+    background:green;
+    color:white;
+    padding:5px 10px;
+    font-size:12px;
+    border-radius:5px;
+    margin:10px;
 }
 
-.available {
-    background: green;
-}
+.out { background:red; }
 
-.out {
-    background: red;
-}
-
+/* WHATSAPP FLOTANTE */
 .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 28px;
-    padding: 15px;
-    border-radius: 50%;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    font-size:28px;
+    padding:15px;
+    border-radius:50%;
 }
 </style>
 </head>
@@ -103,95 +119,98 @@ header img {
 <body>
 
 <header>
-    <img src="AURALOGO.JPG.jpg">
+    <img src="AURALOGO.JPG">
     <h1>Aura Indumentaria</h1>
 </header>
 
 <div class="social">
-    <a href="https://www.instagram.com/auraindumentariaog/" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.facebook.com/profile.php?id=61577531774795" target="_blank">
-        <i class="fab fa-facebook"></i>
-    </a>
+    <a href="https://www.instagram.com/auraindumentariaog/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61577531774795" target="_blank"><i class="fab fa-facebook"></i></a>
 </div>
 
 <div class="container">
 
+<!-- PRODUCTO -->
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="OUFITCREMITA. JPG.png">
+<img src="OUFITCREMITA.JPG">
 <div class="info">
 <h3>Outfit Cremita</h3>
 <div class="price">Pantalón $45.000</div>
 <div class="price">Sweater $35.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Outfit%20Cremita">Comprar</a>
 </div>
 </div>
 
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="CONJUNTOBLNACO. JPG.png">
+<img src="CONJUNTOBLNACO.JPG">
 <div class="info">
 <h3>Conjunto Blanco</h3>
 <div class="price">Pantalón $45.000</div>
 <div class="price">Sweater $35.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Conjunto%20Blanco">Comprar</a>
 </div>
 </div>
 
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="BODYCAMISA. JPG.png">
+<img src="BODYCAMISA.JPG">
 <div class="info">
 <h3>Body Camisa</h3>
 <div class="price">$30.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Body%20Camisa">Comprar</a>
 </div>
 </div>
 
-<div class="card"><span class="tag available">Disponible</span><img src="BUZOARGENTINA1. JPG.png"><div class="info"><h3>Buzo Argentina 1</h3><div class="price">$25.000</div></div></div>
-<div class="card"><span class="tag available">Disponible</span><img src="BUZOARGENTINA2. JPG.png"><div class="info"><h3>Buzo Argentina 2</h3><div class="price">$25.000</div></div></div>
-<div class="card"><span class="tag available">Disponible</span><img src="BUZOARGENTINA3. JPG.png"><div class="info"><h3>Buzo Argentina 3</h3><div class="price">$25.000</div></div></div>
-<div class="card"><span class="tag available">Disponible</span><img src="BUZOARGENTINA4. JPG.png"><div class="info"><h3>Buzo Argentina 4</h3><div class="price">$25.000</div></div></div>
-<div class="card"><span class="tag available">Disponible</span><img src="BUZOARGENTINA5. JPG.png"><div class="info"><h3>Buzo Argentina 5</h3><div class="price">$25.000</div></div></div>
+<!-- BUZOS -->
+<div class="card"><img src="BUZOARGENTINA1.JPG"><div class="info"><h3>Buzo Argentina 1</h3><div class="price">$25.000</div><a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Buzo%201">Comprar</a></div></div>
+
+<div class="card"><img src="BUZOARGENTINA2.JPG"><div class="info"><h3>Buzo Argentina 2</h3><div class="price">$25.000</div><a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Buzo%202">Comprar</a></div></div>
+
+<div class="card"><img src="BUZOARGENTINA3.JPG"><div class="info"><h3>Buzo Argentina 3</h3><div class="price">$25.000</div><a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Buzo%203">Comprar</a></div></div>
+
+<div class="card"><img src="BUZOARGENTINA4.JPG"><div class="info"><h3>Buzo Argentina 4</h3><div class="price">$25.000</div><a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Buzo%204">Comprar</a></div></div>
+
+<div class="card"><img src="BUZOARGENTINA5.JPG"><div class="info"><h3>Buzo Argentina 5</h3><div class="price">$25.000</div><a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Buzo%205">Comprar</a></div></div>
 
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="CHAQUETA. JPG.png">
+<img src="CHAQUETA.JPG">
 <div class="info">
 <h3>Chaqueta</h3>
 <div class="price">$60.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Chaqueta">Comprar</a>
 </div>
 </div>
 
+<!-- SIN STOCK -->
 <div class="card">
-<span class="tag out">Sin Stock</span>
-<img src="PANTALONJEAN. JPG.jpeg">
+<img src="PANTALONJEAN.JPG">
 <div class="info">
 <h3>Pantalón Jean</h3>
 <div class="price">$45.000</div>
+<div style="color:red;font-weight:bold;">Sin Stock</div>
 </div>
 </div>
 
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="PALAZOS. JPG.png">
+<img src="PALAZOS.JPG">
 <div class="info">
 <h3>Palazos</h3>
 <div class="price">$20.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Palazos">Comprar</a>
 </div>
 </div>
 
 <div class="card">
-<span class="tag available">Disponible</span>
-<img src="CONJUNTOANIMALPRINT. JPG.png">
+<img src="CONJUNTOANIMALPRINT.JPG">
 <div class="info">
 <h3>Conjunto Animal Print</h3>
 <div class="price">$40.000</div>
+<a class="buy" href="https://wa.me/5492622466018?text=Hola!%20Quiero%20comprar%20Conjunto%20Animal%20Print">Comprar</a>
 </div>
 </div>
 
 </div>
 
-<a class="whatsapp" href="https://wa.me/5492622466018?text=Me%20gustaria%20conseguir%20mas%20informacion%20sobre%20precios%20y%20talles" target="_blank">
+<a class="whatsapp" href="https://wa.me/5492622466018" target="_blank">
 <i class="fab fa-whatsapp"></i>
 </a>
 
